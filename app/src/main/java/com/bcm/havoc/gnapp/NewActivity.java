@@ -8,7 +8,6 @@ import android.widget.TextView;
 import com.bcm.havoc.gnapp.Base.ui.BaseActivity;
 import com.bcm.havoc.gnapp.Base.utils.DateDialog;
 import com.bcm.havoc.gnapp.Base.utils.TimeUtils;
-import com.jaygoo.widget.OnRangeChangedListener;
 import com.jaygoo.widget.RangeSeekBar;
 
 public class NewActivity extends BaseActivity implements View.OnClickListener {
@@ -36,15 +35,16 @@ public class NewActivity extends BaseActivity implements View.OnClickListener {
         endTime = (TextView) findViewById(R.id.tv_new_end_time);
         furitkind = (TextView) findViewById(R.id.tv_new_furit_kind);
         beerkind = (TextView) findViewById(R.id.tv_new_beer_kind);
-        seekbar5 = findViewById(R.id.seekbar5);
-        seekbar5.setValue(25, 75);
+//        seekbar5 = findViewById(R.id.seekbar5);
+//        seekbar5.setValue(25, 75);
         findViewById(R.id.tv_new_start_time).setOnClickListener(this);
         findViewById(R.id.tv_new_end_time).setOnClickListener(this);
         findViewById(R.id.tv_new_furit_kind).setOnClickListener(this);
 //        findViewById(R.id.tv_new_area).setOnClickListener(this);
-        findViewById(R.id.tv_new_beer_num).setOnClickListener(this);
+//        findViewById(R.id.tv_new_beer_num).setOnClickListener(this);
         findViewById(R.id.tv_new_beer_kind).setOnClickListener(this);
         findViewById(R.id.tv_new_message).setOnClickListener(this);
+        findViewById(R.id.btn_miss_fn).setOnClickListener(this);
         furitkindlist = new String[6];
         furitkindlist[0] = "番茄";
         furitkindlist[1] = "西瓜";
@@ -62,28 +62,28 @@ public class NewActivity extends BaseActivity implements View.OnClickListener {
         beerkindlist[6] = "绿努蜂";
         beerkindlist[7] = "苏拉威西蜂";
         beerkindlist[8] = "东方蜜蜂";
-        seekbar5.setOnRangeChangedListener(new OnRangeChangedListener() {
-            @Override
-            public void onRangeChanged(RangeSeekBar view, float leftValue, float rightValue, boolean isFromUser) {
-                seekbar5.setIndicatorText((int) leftValue + "");
-//                application.setCachedate((int)leftValue);
-            }
-
-            @Override
-            public void onStartTrackingTouch(RangeSeekBar view, boolean isLeft) {
-                //do what you want!!
-            }
-
-            @Override
-            public void onStopTrackingTouch(RangeSeekBar view, boolean isLeft) {
-                //do what you want!!
-            }
-        });
-//        if (application.getCachedate() != 0) {
-//            seekbar5.setValue(application.getCachedate());
-//        } else {
-//            seekbar5.setValue(30);
-//        }
+//        seekbar5.setOnRangeChangedListener(new OnRangeChangedListener() {
+//            @Override
+//            public void onRangeChanged(RangeSeekBar view, float leftValue, float rightValue, boolean isFromUser) {
+//                seekbar5.setIndicatorText((int) leftValue + "");
+////                application.setCachedate((int)leftValue);
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(RangeSeekBar view, boolean isLeft) {
+//                //do what you want!!
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(RangeSeekBar view, boolean isLeft) {
+//                //do what you want!!
+//            }
+//        });
+////        if (application.getCachedate() != 0) {
+////            seekbar5.setValue(application.getCachedate());
+////        } else {
+////            seekbar5.setValue(30);
+////        }
     }
 
     @Override
@@ -109,7 +109,7 @@ public class NewActivity extends BaseActivity implements View.OnClickListener {
 //                finish();
 //                break;
             case R.id.tv_new_beer_kind:
-                dateDialog.setList("蜜蜂种类", furitkind, furitkindlist);
+                dateDialog.setList("蜜蜂种类", beerkind, beerkindlist);
                 break;
             case R.id.tv_new_message:
                 finish();

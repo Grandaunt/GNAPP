@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_dashboard:
                     viewpager_launch.setCurrentItem(0);
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_home:
                     viewpager_launch.setCurrentItem(1);
                     return true;
                 case R.id.navigation_notifications:
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
             public void onPageScrollStateChanged(int state) {
             }
         });
-        list_fragment.add(HomeFragment.newInstance("",""));
         list_fragment.add(LookListFragment.newInstance("",""));
+        list_fragment.add(HomeFragment.newInstance("",""));
         list_fragment.add(MyFragment.newInstance("",""));
         BottomViewAdapter adapter = new BottomViewAdapter(getSupportFragmentManager(), list_fragment);
         viewpager_launch.setAdapter(adapter);

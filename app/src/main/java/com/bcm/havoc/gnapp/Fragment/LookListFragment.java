@@ -33,7 +33,7 @@ import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.MyLocationConfiguration;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.model.LatLng;
-import com.bcm.havoc.gnapp.OrderInfoActivity;
+import com.bcm.havoc.gnapp.FnInfoActivity;
 import com.bcm.havoc.gnapp.R;
 
 import static android.content.Context.SENSOR_SERVICE;
@@ -87,6 +87,10 @@ public class LookListFragment extends Fragment implements SensorEventListener {
     private Marker mMarkerE;
     private Marker mMarkerF;
     private Marker mMarkerG;
+    private Marker mMarkerH;
+    private Marker mMarkerI;
+    private Marker mMarkerJ;
+    private Marker mMarkerK;
     // 初始化全局 bitmap 信息，不用时及时 recycle
     BitmapDescriptor bdA = BitmapDescriptorFactory
             .fromResource(R.mipmap.ic_loc_fn);
@@ -179,7 +183,7 @@ public class LookListFragment extends Fragment implements SensorEventListener {
 //                                    ll.longitude + 0.005);
 //                            marker.setPosition(llNew);
 //                            mBaiduMap.hideInfoWindow();
-                            Intent intent = new Intent(getActivity(),OrderInfoActivity.class);
+                            Intent intent = new Intent(getActivity(),FnInfoActivity.class);
                             startActivity(intent);
                         }
                     };
@@ -194,10 +198,17 @@ public class LookListFragment extends Fragment implements SensorEventListener {
     }
     public void initOverlay() {
         // add marker overlay
-        LatLng llA = new LatLng(39.963175, 116.400244);
-        LatLng llB = new LatLng(39.942821, 116.369199);
-        LatLng llC = new LatLng(39.939723, 116.425541);
-        LatLng llD = new LatLng(39.906965, 116.401394);
+        LatLng llA = new LatLng(40.263175, 116.200244);
+        LatLng llB = new LatLng(40.342821, 116.229199);
+        LatLng llC = new LatLng(40.236723, 116.615541);
+        LatLng llD = new LatLng(40.306965, 116.511394);
+        LatLng llE = new LatLng(40.336965, 116.421394);
+        LatLng llF = new LatLng(40.326965, 116.261394);
+        LatLng llG = new LatLng(40.316965, 116.201394);
+        LatLng llH = new LatLng(40.306965, 116.171394);
+        LatLng llI = new LatLng(40.406965, 116.401394);
+        LatLng llJ = new LatLng(40.206965, 116.311394);
+        LatLng llK = new LatLng(40.256965, 116.251394);
 
         MarkerOptions ooA = new MarkerOptions().position(llA).icon(bdA)
                 .zIndex(9).draggable(true);
@@ -209,6 +220,31 @@ public class LookListFragment extends Fragment implements SensorEventListener {
         MarkerOptions ooC = new MarkerOptions().position(llC).icon(bdA)
                 .zIndex(7).draggable(true);
         mMarkerC = (Marker) (mBaiduMap.addOverlay(ooC));
+        MarkerOptions ooD = new MarkerOptions().position(llD).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerD = (Marker) (mBaiduMap.addOverlay(ooD));
+        MarkerOptions ooE = new MarkerOptions().position(llE).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerE = (Marker) (mBaiduMap.addOverlay(ooE));
+        MarkerOptions ooF = new MarkerOptions().position(llF).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerF = (Marker) (mBaiduMap.addOverlay(ooF));
+        MarkerOptions ooG = new MarkerOptions().position(llG).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerG = (Marker) (mBaiduMap.addOverlay(ooG));
+        MarkerOptions ooH = new MarkerOptions().position(llH).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerH = (Marker) (mBaiduMap.addOverlay(ooH));
+        MarkerOptions ooI = new MarkerOptions().position(llI).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerI = (Marker) (mBaiduMap.addOverlay(ooI));
+        MarkerOptions ooJ = new MarkerOptions().position(llJ).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerJ = (Marker) (mBaiduMap.addOverlay(ooJ));
+        MarkerOptions ooK = new MarkerOptions().position(llK).icon(bdA)
+                .zIndex(7).draggable(true);
+        mMarkerK = (Marker) (mBaiduMap.addOverlay(ooK));
+
 
 //        mBaiduMap.setOnMarkerDragListener(new BaiduMap.OnMarkerDragListener() {
 //            public void onMarkerDrag(Marker marker) {

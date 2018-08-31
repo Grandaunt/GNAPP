@@ -72,5 +72,19 @@
         <!-- Used for the background -->
         <item name="android:background">#fff</item>
     </style>
+    <!--修改Dialog的样式-->
+    <style name="MyAlertDialogListStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/gray3</item>
 
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorTertiary">@color/gray3</item>
+        <item name="android:textColorHint">@color/gray3</item>
+        <item name="android:textColorHighlight">@color/gray3</item>
+        <item name="android:textColorLink">@color/gray3</item>
+        <!-- Used for the background -->
+        <item name="android:background">#fff</item>
+    </style>
 </resources>

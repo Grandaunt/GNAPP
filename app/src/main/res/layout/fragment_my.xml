@@ -13,9 +13,12 @@
         android:orientation="vertical"
         android:background="@color/bg">
     <LinearLayout
+        android:id="@+id/edit_my_info"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-android:gravity="center"
+
+        android:orientation="vertical"
+
         android:background="@color/colorPrimary">
 
     <ImageView
@@ -25,8 +28,18 @@ android:gravity="center"
         android:src="@mipmap/ic_yi"
         android:scaleType="fitCenter"
         android:background="@null"
+
         android:layout_gravity="center"
         />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="果农"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
     </LinearLayout>
     <TextView
         android:layout_height="wrap_content"

@@ -107,7 +107,8 @@
         <activity android:name=".OrderInfoActivity" />
         <activity android:name=".BaseInfoActivity" />
         <activity android:name=".NewActivity" />
-        <activity android:name=".FnListActivity"></activity>
+        <activity android:name=".FnListActivity" />
+        <activity android:name=".FnInfoActivity"></activity>
     </application>
 
 </manifest>

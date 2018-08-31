@@ -45,8 +45,6 @@ public class DateDialog {
         inflater = LayoutInflater.from(context);
         v = inflater.inflate(R.layout.view_datepickerdialog, null);
         datePicker = (DatePicker) v.findViewById(R.id.datepicker);
-
-
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
         if (StartTime != null) {
@@ -168,8 +166,9 @@ public class DateDialog {
 
     public int setList(final String title, final TextView resultText, final String[] datas) {
         post = 0;
-        dialog = new AlertDialog.Builder(context);
+        dialog = new AlertDialog.Builder(context,R.style.MyAlertDialogListStyle);
         dialog.setTitle(title);
+//        dialog.setBa(title);
         dialog .setItems(datas, new DialogInterface.OnClickListener()
         {
             @Override

@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FnListActivity">
+    android:background="@color/bg"
+    tools:context=".FnListActivity"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/sp_20"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_zh"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.33"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:text="综合"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableRight="@mipmap/ic_up"/>
+    <!--<View-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="0.5dp"-->
+        <!--android:background="@color/gray_e7e7e7"/>-->
+    <Button
+        android:id="@+id/btn_jl"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.33"
+        android:background="@color/white"
+        android:text="距离"
+        android:textSize="16dp"
 
-</android.support.constraint.ConstraintLayout>
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableRight="@mipmap/ic_up"/>
+    <Button
+        android:id="@+id/btn_pj"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        android:layout_weight="0.33"
+        android:text="评价"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableRight="@mipmap/ic_up"/>
+</LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

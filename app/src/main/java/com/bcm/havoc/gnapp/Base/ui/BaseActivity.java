@@ -209,7 +209,27 @@ public class BaseActivity extends AppCompatActivity {
 //
 //
 //    }
+//@Override
+//public void onClick(View view) {
+//    switch (view.getId()) {
+//        case R.id.tv_new_start_time:
 //
+//            break;
+//        case R.id.tv_new_end_time:
+//
+//            break;
+//        case R.id.tv_new_furit_kind:
+//
+//            break;
+////            case R.id.tv_new_area:
+////                finish();
+////                break;
+////               default:
+//                break;
+//
+//    }
+//
+//}
 //    @Override
 //    protected void onResume() {
 //        refresh();
