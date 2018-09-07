@@ -22,6 +22,7 @@ import com.bcm.havoc.gnapp.Entity.BeesInfoEntity;
 import com.bcm.havoc.gnapp.Entity.FruitGrowersEntity;
 import com.bcm.havoc.gnapp.Entity.FruitTreesInfoEntity;
 import com.bcm.havoc.gnapp.Entity.OrderInfoEntity;
+import com.bcm.havoc.gnapp.MainActivity;
 import com.bcm.havoc.gnapp.NewActivity;
 import com.bcm.havoc.gnapp.OrderInfoActivity;
 import com.bcm.havoc.gnapp.R;
@@ -148,6 +149,12 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 Intent intent = new Intent(getActivity(),OrderInfoActivity.class);
+                if(position<1) {
+                    intent.putExtra(MainActivity.intenttag1, "old");
+                }
+                else{
+                    intent.putExtra(MainActivity.intenttag1, "over");
+                }
                 startActivity(intent);
             }
         });

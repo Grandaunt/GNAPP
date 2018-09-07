@@ -51,100 +51,212 @@
                 android:textSize="20sp"
                 />
         </LinearLayout>
-            <LinearLayout
-            android:layout_width="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
+            <ScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_height="25dp"
-                    android:layout_width="25dp"
-                    android:scaleType="fitXY"
-                    android:src="@mipmap/ic_comm"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="昌平福事多蜂业有限公司"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:background="@color/white"
-            android:textSize="18sp" />
-            </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_height="25dp"
-                        android:layout_width="25dp"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/ic_time"/>
-                    <TextView
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:text="2018.07.05-2018.12.28"
-                        android:layout_margin="@dimen/activity_horizontal_margin"
-                        android:background="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_height="25dp"
-                        android:layout_width="25dp"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/ic_money"/>
-                    <TextView
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_zhiwu"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="昌平益达丰果蔬农场"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:text="3000"
-                        android:layout_margin="@dimen/activity_horizontal_margin"
-                        android:background="@color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_height="25dp"
-                        android:layout_width="25dp"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/ic_status"/>
-                    <TextView
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_time"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="2018.07.05-2018.12.28"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:text="未完成"
-                        android:layout_margin="@dimen/activity_horizontal_margin"
-                        android:background="@color/white"
-                        android:textSize="18sp" />
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_mifeng"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="3箱蜜蜂"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_area"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="三亩地"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_zhiwu"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="苹果树"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_money"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="30000"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_status"/>
+                        <TextView
+                            android:id="@+id/tv_oder_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="未完成"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <!--<View android:layout_height="0.5dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:background="@color/gray_e7e7e7"/>-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_ly"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="无"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_phone"/>
+                        <TextView
+                            android:id="@+id/tv_oder_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="15730762851"
+                            android:layout_margin="12dp"
+                            android:background="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
                 </LinearLayout>
-                <View android:layout_height="0.5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/gray_e7e7e7"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:text="留言"
-                    android:layout_margin="@dimen/activity_horizontal_margin"
-                    android:background="@color/white"
-                    android:textSize="18sp" />
+            </ScrollView>
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ly_new_order_ok"-->
+                <!--android:layout_width="match_parent"-->
+
+                <!--android:background="@color/skin_fourteen"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_height="65dp">-->
+                <!--<Button-->
+                    <!--android:id="@+id/im_new_order_ok"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="确认接单"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
         </LinearLayout>
-        </LinearLayout>
+
     </android.support.v7.widget.CardView>
 </LinearLayout>

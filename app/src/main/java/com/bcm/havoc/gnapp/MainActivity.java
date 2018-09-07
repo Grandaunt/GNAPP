@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener ,LookListFragment.OnFragmentInteractionListener ,MyFragment.OnFragmentInteractionListener {
-
+    public static String intenttag1="main";
     private TextView mTextMessage;
     private String TAG = MainActivity.class.getSimpleName();
     private MyFragment mMyFragment;
