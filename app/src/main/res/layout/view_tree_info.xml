@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@color/white"
-            android:text="蜜蜂种类:"
+            android:text="果蔬种类:"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp" />
 
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@color/white"
-            android:text="蜂群数量:"
+            android:text="果蔬产量:"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp" />
 
@@ -67,33 +67,36 @@
 
 
         <!--<android.support.v7.widget.RecyclerView-->
-            <!--android:id="@+id/rv_list"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"/>-->
+        <!--android:id="@+id/rv_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
 
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
         android:gravity="center"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_height="65dp"
+            android:id="@+id/im_beer_1"
+            android:layout_height="85dp"
             android:layout_width="65dp"
             android:scaleType="fitXY"
             android:layout_weight="0.3"
             android:src ="@mipmap/im_beerx_1"/>
         <ImageView
-            android:layout_height="65dp"
+            android:id="@+id/im_beer_2"
+            android:layout_height="85dp"
             android:layout_width="65dp"
             android:scaleType="fitXY"
             android:layout_weight="0.3"
             android:src ="@mipmap/im_beerx_2"/>
         <ImageView
-            android:layout_height="65dp"
+            android:id="@+id/im_beer_3"
+            android:layout_height="85dp"
             android:layout_width="65dp"
             android:scaleType="fitXY"
             android:layout_weight="0.3"

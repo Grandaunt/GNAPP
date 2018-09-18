@@ -21,6 +21,10 @@ public class HomeAdapter extends BaseQuickAdapter<OrderInfoEntity, BaseViewHolde
 //        helper.setImageResource(R.id.icon, item.getImageResource());
         helper.setText(R.id.item_home_name, item.getBeekeePerEntity().getFarm_name());
         helper.setText(R.id.item_home_status, item.getStatus());
+//        helper.setText(R.id.item_home_money, "￥"+item.getBeekeePerEntity().getService_price_hight());
+//        helper.setText(R.id.item_home_time, item.getBeekeePerEntity().getService_time_hight());
+//        helper.setImageResource(R.id.logo,R.mipmap.ic_comm_gn);
+        helper.setImageResource(R.id.logo,item.getBeekeePerEntity().getBeklogo());
 
     }
 }

@@ -172,10 +172,55 @@ public class HomeFragment extends Fragment {
         BeesInfoEntity bees= new BeesInfoEntity("1","熊蜂",photos,"2500");
         List<BeesInfoEntity> beerlist = new ArrayList<>();
         beerlist.add(bees);
-        BeekeePerEntity bentity = new BeekeePerEntity("", "张卫华", "昌平福事多蜂业有限公司", "北京市昌平区南口镇", "12",
-                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "35000", "12",
-                "1", "65", "2", "20000", "200", beerlist);
-
+     List<BeekeePerEntity>   mBekDataList = new ArrayList<>();
+        BeekeePerEntity bentity1 = new BeekeePerEntity("1", "张卫华", "昌平福事多蜂业有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "3.5万-6万", "52.2km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo1, beerlist);
+        BeekeePerEntity bentity2 = new BeekeePerEntity("2", "张卫华", "百花蜂业有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "15万-19万", "52.7km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo2,  beerlist);
+        BeekeePerEntity bentity3 = new BeekeePerEntity("3", "张卫华", "北京市蜂业公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "12万-17万", "52.9km", "1",
+                "65", "2", "20000", "200", R.mipmap.ic_fsd_logo3, beerlist);
+        BeekeePerEntity bentity4 = new BeekeePerEntity("4", "张卫华", "知蜂堂有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "12万-17万", "53.2km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo4,  beerlist);
+        BeekeePerEntity bentity5 = new BeekeePerEntity("5", "张卫华", "明园蜂业有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "9.6万-15万", "58.8km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo5,  beerlist);
+        BeekeePerEntity bentity6 = new BeekeePerEntity("6", "张卫华", "蜂之语蜂业有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "9.2万-15万", "61.4km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo6,  beerlist);
+        BeekeePerEntity bentity7 = new BeekeePerEntity("7", "张卫华", "汪氏蜜蜂园有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "9.1万-15万", "64.7km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo7,  beerlist);
+        BeekeePerEntity bentity8 = new BeekeePerEntity("8", "张卫华", "冠生园蜂制品有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "9.1万-15万", "69.1km", "1",
+                "65", "2", "20000", "200", R.mipmap.ic_fsd_logo8, beerlist);
+        BeekeePerEntity bentity9= new BeekeePerEntity("9", "张卫华", "颐寿园（北京）有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "8.6万-14万", "72.5km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo9,  beerlist);
+        BeekeePerEntity bentity10= new BeekeePerEntity("10", "张卫华", "王巢蜂业有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "7.8万-9万", "78.6km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo10,  beerlist);
+        BeekeePerEntity bentity11= new BeekeePerEntity("11", "张卫华", "趣蜂场有限公司", "北京市昌平区南口镇", "12",
+                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "3.5万-6万", "81.7km", "1",
+                "65", "2", "20000", "200",R.mipmap.ic_fsd_logo11,  beerlist);
+        mBekDataList.add(bentity1);
+        mBekDataList.add(bentity2);
+        mBekDataList.add(bentity3);
+        mBekDataList.add(bentity4);
+        mBekDataList.add(bentity5);
+        mBekDataList.add(bentity6);
+        mBekDataList.add(bentity7);
+        mBekDataList.add(bentity8);
+        mBekDataList.add(bentity9);
+        mBekDataList.add(bentity10);
+        mBekDataList.add(bentity11);
+//        BeekeePerEntity bentity = new BeekeePerEntity("", "张卫华", "昌平福事多蜂业有限公司", "北京市昌平区南口镇", "12",
+//                "18651002639", "http://cpfyxh.cpweb.gov.cn/", "35000", "12",
+//                "1", "65", "2", "20000", "200", beerlist);
+//
         List<FruitTreesInfoEntity> fruitTreesInfoEntityList = new ArrayList<>();
         FruitGrowersEntity fentity = new FruitGrowersEntity("","","","","","","","",fruitTreesInfoEntityList );
         for(int i=0;i<11;i++) {
@@ -183,7 +228,7 @@ public class HomeFragment extends Fragment {
             if(i==0){
                 status ="未完成";
             }
-            OrderInfoEntity orderInfoEntity = new OrderInfoEntity(fentity,bentity,status);
+            OrderInfoEntity orderInfoEntity = new OrderInfoEntity(fentity,mBekDataList.get(i),status);
 
             mDataList.add(orderInfoEntity);
         }

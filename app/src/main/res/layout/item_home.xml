@@ -23,6 +23,7 @@
             android:id="@+id/logo"
             android:layout_height="match_parent"
             android:layout_width="90dp"
+            android:padding="@dimen/activity_horizontal_margin"
             android:src="@mipmap/ic_fsd_logo"
             android:scaleType="fitCenter"
             android:background="@null"

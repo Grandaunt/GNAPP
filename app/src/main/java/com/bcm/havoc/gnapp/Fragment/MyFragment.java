@@ -1,6 +1,7 @@
 package com.bcm.havoc.gnapp.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,8 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.bcm.havoc.gnapp.Base.application.MyApplication;
+import com.bcm.havoc.gnapp.BaseInfoActivity;
 import com.bcm.havoc.gnapp.R;
 
 import org.xutils.x;
@@ -75,7 +78,21 @@ public class MyFragment extends Fragment {
         application = (MyApplication) getActivity().getApplication();
         View view =inflater.inflate(R.layout.fragment_my, container, false);
         ImageView logo = view.findViewById(R.id.im_my_logo);
+        LinearLayout ly_edit_my_info =(LinearLayout) view.findViewById(R.id.edit_my_info);
         x.image().bind(logo,"" , optionCricle);
+        ly_edit_my_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), BaseInfoActivity.class);
+//                if(position<1) {
+                    intent.putExtra(BaseInfoActivity.intenttag2, "edit");
+//                }
+//                else{
+//                    intent.putExtra(MainActivity.intenttag1, "over");
+//                }
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

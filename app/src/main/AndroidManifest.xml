@@ -108,6 +108,12 @@
         <activity android:name=".BaseInfoActivity" />
         <activity android:name=".NewActivity" />
         <activity android:name=".FnListActivity" />
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".FnInfoActivity"></activity>
     </application>
 

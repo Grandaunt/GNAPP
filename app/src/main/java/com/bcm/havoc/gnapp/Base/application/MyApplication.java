@@ -13,13 +13,19 @@ import com.bcm.havoc.gnapp.Base.entity.UserEntity;
 import com.bcm.havoc.gnapp.Base.ui.LoginActivity;
 import com.bcm.havoc.gnapp.R;
 import com.bcm.havoc.gnapp.service.LocationService;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.squareup.leakcanary.LeakCanary;
 
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
 
 import java.util.ArrayList;
 
-
+import cn.finalteam.rxgalleryfinal.utils.ModelUtils;
 
 
 /**
@@ -49,7 +55,7 @@ public class MyApplication extends Application {
         x.Ext.init(this);
         x.Ext.setDebug(true); // 是否输出debug日志
         instance = this;
-//        initRxGallery();
+        initRxGallery();
         initACache();
 
         //头像
@@ -93,23 +99,23 @@ public class MyApplication extends Application {
 
     }
 
-//    private void initRxGallery() {
-//        //打开日志
-//        ModelUtils.setDebugModel(true);
-//        Fresco.initialize(this);
-//        ImageLoaderConfiguration.Builder config = new ImageLoaderConfiguration.Builder(this);
-//        config.threadPriority(Thread.NORM_PRIORITY - 2);
-//        config.denyCacheImageMultipleSizesInMemory();
-//        config.diskCacheFileNameGenerator(new Md5FileNameGenerator());
-//        config.diskCacheSize(50 * 1024 * 1024); // 50 MiB
-//        config.tasksProcessingOrder(QueueProcessingType.LIFO);
-//        ImageLoader.getInstance().init(config.build());
-//
-//        if (LeakCanary.isInAnalyzerProcess(this)) {
-//            return;
-//        }
-//        LeakCanary.install(this);
-//    }
+    private void initRxGallery() {
+        //打开日志
+        ModelUtils.setDebugModel(true);
+        Fresco.initialize(this);
+        ImageLoaderConfiguration.Builder config = new ImageLoaderConfiguration.Builder(this);
+        config.threadPriority(Thread.NORM_PRIORITY - 2);
+        config.denyCacheImageMultipleSizesInMemory();
+        config.diskCacheFileNameGenerator(new Md5FileNameGenerator());
+        config.diskCacheSize(50 * 1024 * 1024); // 50 MiB
+        config.tasksProcessingOrder(QueueProcessingType.LIFO);
+        ImageLoader.getInstance().init(config.build());
+
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            return;
+        }
+        LeakCanary.install(this);
+    }
 
 
     private void initACache() {

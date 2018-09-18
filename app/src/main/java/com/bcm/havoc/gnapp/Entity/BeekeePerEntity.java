@@ -12,7 +12,7 @@ public class BeekeePerEntity implements Serializable {
     public BeekeePerEntity() {
     }
 
-    public BeekeePerEntity(String id, String beekeepers_name, String farm_name, String address, String farm_age, String phone, String web, String total_num, String service_area_hight, String service_area_low, String service_time_hight, String service_time_low, String service_price_hight, String service_price_low, List<BeesInfoEntity> beesInfoEntitlist) {
+    public BeekeePerEntity(String id, String beekeepers_name, String farm_name, String address, String farm_age, String phone, String web, String total_num, String service_area_hight, String service_area_low, String service_time_hight, String service_time_low, String service_price_hight, String service_price_low, int beklogo, List<BeesInfoEntity> beesInfoEntitlist) {
         this.id = id;
         this.beekeepers_name = beekeepers_name;
         this.farm_name = farm_name;
@@ -27,6 +27,7 @@ public class BeekeePerEntity implements Serializable {
         this.service_time_low = service_time_low;
         this.service_price_hight = service_price_hight;
         this.service_price_low = service_price_low;
+        this.beklogo = beklogo;
         this.beesInfoEntitlist = beesInfoEntitlist;
     }
 
@@ -60,8 +61,18 @@ public class BeekeePerEntity implements Serializable {
     private String service_price_hight ;
     //提供服务最少价钱
     private String service_price_low ;
+    //logo
+    private int beklogo ;
     //蜜蜂list
     private List<BeesInfoEntity> beesInfoEntitlist;
+
+    public int getBeklogo() {
+        return beklogo;
+    }
+
+    public void setBeklogo(int beklogo) {
+        this.beklogo = beklogo;
+    }
 
     public String getId() {
         return id;
@@ -200,6 +211,7 @@ public class BeekeePerEntity implements Serializable {
                 ", service_time_low='" + service_time_low + '\'' +
                 ", service_price_hight='" + service_price_hight + '\'' +
                 ", service_price_low='" + service_price_low + '\'' +
+                ", beklogo='" + beklogo + '\'' +
                 ", beesInfoEntitlist=" + beesInfoEntitlist +
                 '}';
     }
